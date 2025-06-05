@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxTime - Our Collection</title>
+    <!-- Google Fonts -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&family=Raleway:wght@400;500;600&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><i class="fas fa-clock"></i> LuxTime</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./product.html" class="nav-link active">Products</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-parallax">
+        <div class="hero-content">
+            <h1>Our Collection</h1>
+            <p>Discover Timeless Elegance</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category">Category</label>
+                    <select id="category" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="dress">Dress Watches</option>
+                        <option value="sports">Sports Watches</option>
+                        <option value="diving">Diving Watches</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range</label>
+                    <select id="price" class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="under-1000">Under $1,000</option>
+                        <option value="1000-5000">$1,000 - $5,000</option>
+                        <option value="over-5000">Over $5,000</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sort By</label>
+                    <select id="sort" class="filter-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Collection</h2>
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/fp1.avif" alt="Luxury Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Chronograph</h3>
+                        <p class="product-category">Dress Watch</p>
+                        <p class="product-price">$2,499</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/fp2.avif" alt="Luxury Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sport Diver</h3>
+                        <p class="product-category">Diving Watch</p>
+                        <p class="product-price">$3,999</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/fp3.avif" alt="Luxury Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Automatic</h3>
+                        <p class="product-category">Dress Watch</p>
+                        <p class="product-price">$1,899</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="./images/product/bbc1.jpg" alt="Dress Watches">
+                    <div class="category-content">
+                        <h3>Dress Watches</h3>
+                        <a href="#" class="category-link">View Collection</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="./images/product/bbc2.jpg" alt="Dress Watches" alt="Sports Watches">
+                    <div class="category-content">
+                        <h3>Sports Watches</h3>
+                        <a href="#" class="category-link">View Collection</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="./images/product/bbc3.jpg" alt="Dress Watches" alt="Diving Watches">
+                    <div class="category-content">
+                        <h3>Diving Watches</h3>
+                        <a href="#" class="category-link">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals-section">
+        <div class="container">
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="products-grid">
+                <!-- New Arrival Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/na1.avif" alt="New Luxury Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Chronograph</h3>
+                        <p class="product-category">Sports Watch</p>
+                        <p class="product-price">$3,299</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Arrival Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/na2.avif" alt="New Luxury Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Automatic</h3>
+                        <p class="product-category">Dress Watch</p>
+                        <p class="product-price">$4,199</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Arrival Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/na3.avif" alt="New Luxury Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Diver</h3>
+                        <p class="product-category">Diving Watch</p>
+                        <p class="product-price">$5,499</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers-section">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="products-grid">
+                <!-- Best Seller Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/bs1.jpg" alt="Best Seller Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                        <div class="product-badge best-seller">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Automatic</h3>
+                        <p class="product-category">Dress Watch</p>
+                        <p class="product-price">$2,999</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best Seller Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/bs2.jpg" alt="Best Seller Watch" alt="Best Seller Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                        <div class="product-badge best-seller">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sport Chronograph</h3>
+                        <p class="product-category">Sports Watch</p>
+                        <p class="product-price">$3,799</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best Seller Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product/bs3.jpg" alt="Best Seller Watch">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Quick View</a>
+                        </div>
+                        <div class="product-badge best-seller">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Diver</h3>
+                        <p class="product-category">Diving Watch</p>
+                        <p class="product-price">$4,299</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Watches</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Premium Materials</h3>
+                    <p>Handcrafted using the finest materials, including sapphire crystal and premium steel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Swiss Movement</h3>
+                    <p>Precision-engineered Swiss movements ensuring exceptional accuracy and reliability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>5-Year Warranty</h3>
+                    <p>Comprehensive warranty coverage for peace of mind with every purchase.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Free Shipping</h3>
+                    <p>Complimentary worldwide shipping on all orders over $1,000.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section class="showcase-section">
+        <div class="container">
+            <h2 class="section-title">Featured Showcase</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item large">
+                    <img src="./images/product/x.jpg">
+                    <div class="showcase-content">
+                        <h3>Premium Collection</h3>
+                        <p>Experience luxury redefined</p>
+                        <a href="#" class="showcase-btn">Explore Collection</a>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80" alt="Limited Edition">
+                    <div class="showcase-content">
+                        <h3>Limited Edition</h3>
+                        <p>Exclusive timepieces</p>
+                        <a href="#" class="showcase-btn">View Series</a>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=800&q=80" alt="New Arrivals">
+                    <div class="showcase-content">
+                        <h3>New Arrivals</h3>
+                        <p>Latest innovations</p>
+                        <a href="#" class="showcase-btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The craftsmanship is exceptional. Every detail is perfect, and the watch keeps time with remarkable precision."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="John Smith">
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The attention to detail is incredible. The watch feels premium and looks even better in person than in photos."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The customer service was outstanding. They helped me choose the perfect watch for my collection."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Michael Brown">
+                        <div class="author-info">
+                            <h4>Michael Brown</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Compare Our Collections</h2>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="header-cell">Features</div>
+                    <div class="header-cell">Classic Series</div>
+                    <div class="header-cell">Sport Series</div>
+                    <div class="header-cell">Premium Series</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-cell">Movement</div>
+                    <div class="row-cell">Swiss Automatic</div>
+                    <div class="row-cell">Swiss Chronograph</div>
+                    <div class="row-cell">Swiss Tourbillon</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-cell">Water Resistance</div>
+                    <div class="row-cell">50m</div>
+                    <div class="row-cell">200m</div>
+                    <div class="row-cell">300m</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-cell">Case Material</div>
+                    <div class="row-cell">Stainless Steel</div>
+                    <div class="row-cell">Titanium</div>
+                    <div class="row-cell">18K Gold</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-cell">Crystal</div>
+                    <div class="row-cell">Sapphire</div>
+                    <div class="row-cell">Sapphire</div>
+                    <div class="row-cell">Sapphire</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-cell">Warranty</div>
+                    <div class="row-cell">2 Years</div>
+                    <div class="row-cell">3 Years</div>
+                    <div class="row-cell">5 Years</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive offers and new arrivals</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="submit-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-clock"></i> LuxTime</h3>
+                    <p>Your premier destination for luxury wristwatches</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="./index.html">Home</a></p>
+                    <p><a href="./product.html">Products</a></p>
+                    <p><a href="./about.html">About</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@luxtime.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Ave, NY</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #333; padding-top: 2rem; margin-top: 2rem; text-align: center;">
+                <p>&copy; 2025 LuxTime. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
