@@ -7,17 +7,26 @@ $(document).ready(function () {
         $(".form-group input, .form-group textarea").removeClass("error valid");
         $(".error-message").text("").hide();
 
-        const name = $(".name").val().trim();
-        if (name === "") {
-            $(".name").addClass("error");
-            $(".name-error").text("Please enter your name").show();
-            isValid = false;
-        } else {
-            $(".name").addClass("valid");
-        }
+    const name = $(".name").val().trim();
+    const nameRegex = /^[A-Za-z\s]+$/;
+
+if (name === "") {
+    $(".name").addClass("error");
+    $(".name-error").text("Please enter your name").show();
+    isValid = false;
+} else if (!nameRegex.test(name)) {
+    $(".name").addClass("error");
+    $(".name-error").text("Name must contain only letters").show();
+    isValid = false;
+} else {
+    $(".name").removeClass("error").addClass("valid");
+    $(".name-error").hide();
+}
+
 
         const email = $(".email").val().trim();
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/;
+
         if (email === "") {
             $(".email").addClass("error");
             $(".email-error").text("Please enter your email").show();
