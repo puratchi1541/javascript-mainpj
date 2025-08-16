@@ -3,7 +3,7 @@
 
       let email = $(this).find('input[type="email"]').val().trim();
       
-        let pattern = /^[a-zA-Z0-9]+@gmail\.com$/;
+        let pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/;
 
       let messageBox = $(this).find('.message');
 
