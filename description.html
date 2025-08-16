@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxTime Cart</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lato:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/description.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-content">
+      <a href="./product.html" class="back-btn">
+        <i class="bi bi-arrow-left"></i>
+      </a>
+      <h1 class="header-title">Shopping Cart</h1>
+    </div>
+  </div>
+
+<div id="toast"></div>
+
+
+  <section class="cart-section">
+    <div class="container">
+      <div class="cart-wrapper">
+        <!-- Cart Items -->
+        <div class="cart-items">
+          <h2 class="section-title">
+            Your Cart 
+            <!-- <span class="item-count">1 item</span> -->
+          </h2>
+
+       
+
+          <div class="cart-product">
+            <img src="./images/product/fp1.avif" 
+                 alt="Classic Chronograph" class="product-thumb" />
+            <div class="product-info">
+              <h3 class="product-title">Classic Chronograph</h3>
+              <div class="product-meta">
+                <span class="meta-item">
+                  <i class="bi bi-tag"></i>
+                  Dress Watch
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-rulers"></i>
+                  Medium
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-palette"></i>
+                  Gold
+                </span>
+              </div>
+              <div class="product-price">$2,499.00</div>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="rating-text">4.5 (128 reviews)</span>
+              </div>
+            
+            </div>
+            <div class="product-actions">
+              <button class="icon-btn delete" onclick="removeItem()" title="Remove item">
+                <i class="bi bi-trash"></i>
+              </button>
+              <div class="quantity-control">
+                <button class="icon-btn subbtn"  title="Decrease quantity">
+                  <i class="bi bi-dash"></i>
+                </button>
+                <span class="quantity" id="quantity">1</span>
+                <button class="icon-btn addbtn"  title="Increase quantity">
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+             <!-- Success Message -->
+          <div class="success-message hidden" id="successMessage">
+            <i class="bi bi-check-circle"></i>
+            <span>Item updated successfully!</span>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary-box">
+          <h2 class="section-title">Order Summary</h2>
+          
+          <div class="summary-item">
+            <span>Subtotal</span>
+            <span class="summary-price" id="subtotal">$2,499.00</span>
+          </div>
+          
+          <div class="summary-item">
+            <span>
+              <i class="bi bi-truck"></i>
+              Shipping
+            </span>
+            <span style="color: var(--color-green); font-weight: 500;">Free</span>
+          </div>
+          
+          <div class="summary-item discount">
+            <span>
+              <i class="bi bi-percent"></i>
+              Discount (20% off)
+            </span>
+            <span>– $500.00</span>
+          </div>
+          
+          <div class="summary-item">
+            <span>Tax</span>
+            <span class="summary-price">$159.92</span>
+          </div>
+
+          <div class="summary-item total">
+            <strong>Total</strong>
+            <strong class="summary-total" id="total">$2,158.92</strong>
+          </div>
+
+          <div class="promo-section">
+            <input type="text" placeholder="Enter promo code" class="promo-input" id="promoInput" />
+            <button class="btn btn-outline" onclick="applyPromo()">Apply</button>
+          </div>
+
+          <button class="btn btn-primary checkout-btn" onclick="proceedToCheckout()">
+            <i class="bi bi-lock"></i>
+            Secure Checkout
+          </button>
+
+          <div class="trust-indicators">
+            <div class="trust-item">
+              <i class="bi bi-shield-check"></i>
+              <span>Secure</span>
+            </div>
+            <div class="trust-item">
+              <i class="bi bi-truck"></i>
+              <span>Free Shipping</span>
+            </div>
+            <div class="trust-item">
+              <i class="bi bi-arrow-counterclockwise"></i>
+              <span>Easy Returns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+ 
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/description.js"></script>
+
+</body>
+</html>
