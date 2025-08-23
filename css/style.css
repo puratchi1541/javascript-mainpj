@@ -361,7 +361,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 425px){
   .section-title {
     font-size: 32px;
   }

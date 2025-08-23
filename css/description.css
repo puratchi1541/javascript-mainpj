@@ -499,7 +499,7 @@ body {
   display: none;
   min-width: 200px;
   background-color: #10b981;
-  color: white;
+  color: white;              
   text-align: center;
   border-radius: 8px;
   padding: 12px;
@@ -508,8 +508,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-
 }
+
 
 
 

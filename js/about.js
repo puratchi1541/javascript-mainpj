@@ -37,21 +37,29 @@ if (name === "") {
             isValid = false;
         } else {
             $(".email").addClass("valid");
-        }
 
-        const message = $(".message").val().trim();
-        if (message === "") {
-            $(".message").addClass("error");
-            $(".message-error").text("Please enter your message").show();
-            isValid = false;
-        } else {
-            $(".message").addClass("valid");
         }
+const message = $(".message").val().trim();
+const messagePattern = /^[a-zA-Z0-9 ]+$/;
 
-        if (isValid) {
-            alert("Your message has been sent successfully!");
-            $(".contact-form form")[0].reset();
-            $(".form-group input, .form-group textarea").removeClass("valid");
-        }
+if (message === "") {
+    $(".message").addClass("error");
+    $(".message-error").text("Please enter your message").show();
+    isValid = false;
+} else if (!messagePattern.test(message)) {
+    $(".message").addClass("error");
+    $(".message-error").text("Special characters are not allowed").show();
+    isValid = false;
+} else {
+    $(".message").addClass("valid");
+}
+
+if (isValid) {
+    alert("Your message has been sent successfully!");
+    $(".contact-form form")[0].reset();
+    $(".form-group input, .form-group textarea").removeClass("valid");
+}
+
+
     });
 });
